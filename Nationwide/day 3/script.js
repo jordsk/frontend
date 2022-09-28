@@ -1,11 +1,27 @@
-function subCalc(num1, num2){
-    return num1 - num2;
-}
-console.log(subCalc(10,1000));
-
-const welcome = function(name,age,gender){
-    return console.log(`My name is ${name}, i am ${age} years old and of gender ${gender}`);
+let multiply = (x) => {
+    return (y) => {
+      return x * y;
+    };
     }
-   
-    welcome("Vegeta, Prince of all Saiyans",28,"Male");
+    
+    let multi2 = multiply(2);
+    console.log(multi2(20));
+    let multi5 = multiply(5);
+    console.log(multi5(5));
 
+
+    let person = () => {
+        let name = "Billy";
+        return {
+          getName: function () {
+            return name;
+          },
+          setName: function (newName) {
+            name = newName;
+          },
+        };
+      }
+      let personA = person();
+      console.log(personA.getName());
+      personA.setName("Bob Joe");
+      console.log(personA.getName());
