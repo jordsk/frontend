@@ -1,27 +1,20 @@
-let multiply = (x) => {
-    return (y) => {
-      return x * y;
-    };
-    }
-    
-    let multi2 = multiply(2);
-    console.log(multi2(20));
-    let multi5 = multiply(5);
-    console.log(multi5(5));
+"use strict"
 
+let person = () => {
+  let person = ("jordanKao");
+  return {
+    getFirstname: function (jordan) {
+      return person; 
+    },
+    setLastname: function (Kao) {
+      person = jordanKao;
+    },
+  };
+  } 
 
-    let person = () => {
-        let name = "Billy";
-        return {
-          getName: function () {
-            return name;
-          },
-          setName: function (newName) {
-            name = newName;
-          },
-        };
-      }
-      let personA = person();
-      console.log(personA.getName());
-      personA.setName("Bob Joe");
-      console.log(personA.getName());
+  let p = person();
+  let returnedP = p.getFirstname();
+  console.log(`The initial value of getFirstname() is ${returnedP}`);
+  p.returnedP(Jordan)
+  returnedP = p.getFirstname();
+  console.log(`The value of p now is ${returnedP}`);
