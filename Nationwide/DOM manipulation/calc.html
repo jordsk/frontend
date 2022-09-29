@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <h1><b>Welcome to Jordan's Calulator</b></h1>
+</head>
+<body>
+    <style>
+        body {
+    background-color: grey;
+    text-align:center;
+    border: 5px solid black;
+}
+    </style> 
+<input type="number" value ="0" id="calculator" readonly>
+<br>
+<br>
+<div id="calulatorButtons">
+    <button onClick=addition()>+</button>
+    <button onClick=subtraction()>-</button>
+    <button onClick=mutliply()>*</button>
+    <button onClick=division()>/</button>
+    <br>
+    <button onClick=reset()>Reset</button>
+    <br>
+    <button onClick=zero()>0</button>
+    <br>
+    <button onClick=one()>1</button>
+    <button onClick=two()>2</button>
+    <button onClick=three()>3</button>
+    <br>
+    <button onClick=four()>4</button>
+    <button onClick=five()>5</button>
+    <button onClick=six()>6</button>
+    <br>
+    <button onClick=seven()>7</button>
+    <button onClick=eight()>8</button>
+    <button onClick=nine()>9</button>
+    <br>
+    <button onClick=equals()>=</button>
+    <br>
+    <button>history</button>
+</div>
+</section>
+    <script src="./calc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
