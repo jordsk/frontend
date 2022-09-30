@@ -16,3 +16,16 @@ fetch('https://reqres.in/api/users?page=2')
      })
      .catch(err => console.error(`Fetch Error :-S ${err}`));
 
+     function appendData(data){
+        let dataList = document.getElementById("myData");
+        for(let i = 0; i<data.length; i++){
+            let trainer = document.createElement("div");
+            let id = document.createElement("card");
+            id.innerText = "ID: " + data[i].userId;
+            trainer.appendChild(id);
+            let name = document.createElement("p");
+            name.innerText = "Name: " + data[i].name;
+            trainer.appendChild(name);
+            dataList.appendChild(trainer);
+        }
+    }
