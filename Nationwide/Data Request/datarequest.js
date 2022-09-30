@@ -1,7 +1,7 @@
 "use strict"
 
 
-//const URL = "trainers.json";
+const URL = "datarequest.json";
 const URL2 = "https://reqres.in/";
 
 fetch(URL2)
