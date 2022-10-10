@@ -4,7 +4,10 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
-const ducks = [];
+const ducks = [{
+    name: "Daffy",
+    colour: "black"
+}];
 
 app.use(bodyParser.json());
 
@@ -34,4 +37,4 @@ app.delete("/removeDuck/:id", (req, res) => {
     res.send();
 });
 
-const server = app.listen(4494, () => console.log(`Server successfully started on port ${server.address().port}`));
+const server = app.listen(4000, () => console.log(`Server successfully started on port ${server.address().port}`));
