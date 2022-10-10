@@ -9,6 +9,10 @@ const ducks = [{
     colour: "black"
 }];
 
+const itemRoutes = require('./routes/items.js');
+
+app.use(itemRoutes);
+
 app.use(bodyParser.json());
 
 app.get("/hello", (req, res) => {
