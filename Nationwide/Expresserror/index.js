@@ -9,7 +9,7 @@ const ducks = [{
     colour: "black"
 }];
 
-const itemRoutes = require('./routes/items.js');
+const itemRoutes = require('./routes/routes.js');
 
 app.use(itemRoutes);
 
