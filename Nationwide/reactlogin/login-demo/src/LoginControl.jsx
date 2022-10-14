@@ -5,7 +5,7 @@ import Greeting from './Greeting';
 
 const LoginControl = () => {
    const [isLoggedIn, setIsLoggedIn] = useState(false);
-   let button = (isLoggedIn) ? <LogoutButton onClick={() => setIsLoggedIn(false)}/> : <LoginButton onClick={() => setIsLoggedIn(true))}/>
+   let button = (isLoggedIn) ? <LogoutButton onClick={() => setIsLoggedIn(false)}/> : <LoginButton onClick={() => setIsLoggedIn(true)}/>
    return(
      <>
          <Greeting isLoggedIn={isLoggedIn}/>
