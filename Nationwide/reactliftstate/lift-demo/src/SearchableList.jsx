@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import SearchBar from './SearchBar.jsx';
+import SearchBar from './SearchBar';
 
 function SearchableList() {
   const [items, setItems] = useState(['milk', 'eggs', 'bread']);
