@@ -6,6 +6,10 @@ import SearchableList from './SearchableList';
 import Home from './Home';
 import Navigation from './Navigation';
 import ParamsExample from './ParamsExample';
+import Homey from './Homey';
+import Users from './Users';
+import Contact from './Contact';
+import Notfound from './NotFound';
 
 function App() {
   return (
@@ -32,6 +36,31 @@ function App() {
           <Route path="/params/:colour" element={<ParamsExample />} />
         </Routes>
       </Router>
+      <ul>
+            <li>
+                <Link to="/">Home</Link>
+            </li>
+            <li>
+                <Link to="/users">Users</Link>
+            </li>
+            <li>
+                <Link to="/contact">Contact</Link>
+            </li>
+        </ul>
+        <Switch>
+            <Route exact path="/">
+                <Home />
+            </Route>
+            <Route path="/users/:id">
+                <Users />
+            </Route>
+            <Route path="/users">
+                <Users />
+            </Route>
+            <Route path="/contact" >
+                <Contact />
+            </Route>
+        </Switch>
     </div>
   );
 }
