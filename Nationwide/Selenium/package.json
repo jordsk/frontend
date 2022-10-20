@@ -2,9 +2,9 @@
   "name": "selenium-demo",
   "version": "1.0.0",
   "description": "",
-  "main": "demo.test.js",
+  "main": "BrgHpW9NURQgzoNyjfq0Wu6VFO6D7IZEmJNdtgNqpzGG8RuNFHt2jQxWlAs4HMe119chBnv.js",
   "scripts": {
-    "start": "node demo.test.js",
+    "start": "node index.js",
     "test": "mocha tests/ --reporter=nyan --exit"
   },
   "keywords": [],
