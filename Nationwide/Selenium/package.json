@@ -1,0 +1,19 @@
+{
+  "name": "selenium-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "demo.test.js",
+  "scripts": {
+    "start": "node demo.test.js",
+    "test": "mocha tests/ --reporter=nyan --exit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.3.6",
+    "chromedriver": "^106.0.1",
+    "mocha": "^10.1.0",
+    "selenium-webdriver": "^4.5.0"
+  }
+}
