@@ -1,22 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX0lhi32ktrb2uVuD8MdzvAzghg2P8_lGMMw&usqp=CAU"/>
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Welcome to Pokedex
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <br>
+        </br>
       </header>
     </div>
   );

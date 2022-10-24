@@ -1,0 +1,72 @@
+:root {
+    --dark: #374151;
+    --darker: #1f2937;
+    --darkest: #111827;
+    --gray: #6B7280;
+    --light: #EEE;
+    --red: #Ff0000;
+    --yellow: #FFFF00;
+    --gold: #FFD700;
+    --ice: #9EE4D9;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira sams', sans-serif;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: var(--gray);
+    color: #EEE;
+}
+
+header {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2,5rem;
+    font-weight: 300;
+    color: var(--light);
+}
+
+
+input, button {
+    appearance: none;
+    border: none;
+    outline: bold;
+    background: bold;
+}
+
+#new-pokemon-form {
+    background-color: var(--gold);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--darkest);
+    font-size: 1.5rem;
+}
+
+#new-pokemon-input {
+    background-color: var(--red);
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--darkest);
+    font-size: 1rem;
+}
+
+#new-pokemon-form::placeholder {
+    color: var(--darkest);
+}
+
+#submit {
+    color: var(--light);
+    font-size: 1rem;
+    cursor: pointer;
+}
