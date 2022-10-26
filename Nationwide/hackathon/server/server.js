@@ -7,7 +7,7 @@ app.get("/api", (req, res) => {
     res.json({"pokemons":["pokemonOne", "pokemonTwo", "pokemonThree,"] })
 })
 
-app.get ("/", (req, res) => res.send("Welcome to my Pokemon Store"));
+app.get ("/", (req, res) => res.send("Welcome to BuyAPokemon.com"));
 app.get("/newEndpoint", (req, res) => res.send("This is my Pokemon Store endpoint"));
 
 app.get("/getNewpokemon", (req, res) => {
