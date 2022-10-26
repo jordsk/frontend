@@ -26,6 +26,7 @@ const newItems  = [...items, newItem];
 
  setItems(newItems);
  setInputValue('');
+ calculateTotal();
 }
 
 const handleQuantityIncrease = (index) => {
@@ -34,6 +35,7 @@ const handleQuantityIncrease = (index) => {
   newItems[index].quantity++;
 
   setItems(newItems);
+  calculateTotal();
 }
 
 const handleQuantityDecrease = (index) => {
@@ -42,7 +44,24 @@ const handleQuantityDecrease = (index) => {
   newItems[index].quantity--;
 
   setItems(newItems);
+  calculateTotal();
 }
+
+const toggleComplete = (index) => {
+  const newItems = [...items];
+
+  newItems[index].isSelected = !newItems[index].isSelected;
+
+  setItems(newItems);
+};
+
+const calculateTotal = () => {
+  const totalItemCount = items.reduce((total, item) => {
+    return total + item.quantity;
+  }, 0);
+
+  setTotalItemCount(totalItemCount);
+};
 
 return (
   <div className="app-background">
@@ -58,7 +77,7 @@ return (
 <div className='item-list'>
   {items.map((item, index)=> (
  <div className='item-container'>
-    <div className='item-name'>
+    <div className='item-name' onClick={() => toggleComplete(index)}>
       {
       }
       {item.isSelected ? (
@@ -88,7 +107,7 @@ return (
   </div>
   ))}
   </div>
-  <div className='total'>Total: 4</div>
+  <div className='total'>Total: {totalItemCount}</div>
   </div>
 </div>
   );
