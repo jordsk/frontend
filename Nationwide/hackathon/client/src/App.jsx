@@ -12,7 +12,7 @@ const [items, setItems] = useState([
 ]);
 
 const [inputValue, setInputValue] = useState("");
-const [totalItemCount, setTotalItemCount] = useState(6);
+const [totalItemCount, setTotalItemCount] = useState(4);
 
 const handleAddButtonClick = () => {
   const newItem = {
@@ -99,7 +99,7 @@ return (
       <button>
 								<FontAwesomeIcon icon={faChevronLeft} onClick ={()=> handleQuantityDecrease(index)}/>
 							</button>
-							<span> 1 </span>
+							<span></span>
 							<button>
 								<FontAwesomeIcon icon={faChevronRight} onClick ={()=> handleQuantityIncrease(index)}/>
 							</button>

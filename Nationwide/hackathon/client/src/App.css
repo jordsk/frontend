@@ -1,5 +1,5 @@
 * {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 body {
@@ -23,11 +23,11 @@ body {
 }
 
 .main-container {
-  background-color: gold;
-  width: 300px;
+  background-color: #9EE4D9;
+  width: 350px;
   height: min-content;
-  border-radius: 2px;
-  padding: 2px;
+  border-radius: 4px;
+  padding: 4px;
   box-shadow: 10px 10px 26px 0px rgba(0, 0, 0, 0.35);
 }
 
@@ -56,7 +56,7 @@ body {
   background: transparent;
   color: #ffffff;
   width: 100%;
-  height: 20px;
+  height: 14pxx;
 }
 
 input::placeholder {
@@ -76,7 +76,7 @@ input:focus {
   align-items: center;
   justify-content: space-between;
   padding: 20px 0 20px 0;
-  border-bottom: 1px #fbc1bb solid;
+  border-bottom: 1px #ffd900 solid;
 }
 
 .item-name {
@@ -95,7 +95,7 @@ input:focus {
 }
 
 .remove-button {
-  color: white;
+  color: #ffd900;
   background-color: red;
 }
 
